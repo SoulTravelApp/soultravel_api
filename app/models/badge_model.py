@@ -2,9 +2,11 @@ from pydantic import BaseModel
 from datetime import datetime
 
 
-class UserBenefit(BaseModel):
-    user_id: str
-    benefit_id: str
+class Badge(BaseModel):
+    title: str
+    subtitle: str
+    image: str
+    description: str
     ini_vig: datetime
     fim_vig: datetime
     updated_at: datetime

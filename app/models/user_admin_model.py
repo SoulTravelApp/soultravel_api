@@ -4,7 +4,7 @@ from datetime import datetime
 
 class UserAdmin(BaseModel):
     user_id: str
-    ini_vig: str
+    ini_vig: datetime
     fim_vig: datetime
     updated_at: datetime
     created_at: datetime
