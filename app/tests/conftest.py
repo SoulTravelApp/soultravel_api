@@ -5,7 +5,6 @@ from asgi_lifespan import LifespanManager
 from httpx import AsyncClient
 
 from mongomock_motor import AsyncMongoMockClient
-from app import app, token_listener
 import models
 
 
