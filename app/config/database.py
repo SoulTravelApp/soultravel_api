@@ -10,5 +10,7 @@ db = client.soultraveldev
 user_score_collection = db["user_score"]
 benefit_collection = db["benefit"]
 badge_collection = db["badge"]
+rank_collection = db["rank"]
 user_benefit_collection = db["user_benefit"]
+user_rank_collection = db["user_rank"]
 user_admin_collection = db["user_admin"]
