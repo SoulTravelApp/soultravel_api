@@ -6,3 +6,4 @@ client = MongoClient("mongodb+srv://soultravelapp:mzryxB5jPmJ49TsS@soultravel-de
 db = client.soultraveldev
 
 user_score_collection = db["user_score"]
+benefit_collection = db["benefit"]
