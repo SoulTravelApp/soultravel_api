@@ -5,7 +5,6 @@ from asgi_lifespan import LifespanManager
 from httpx import AsyncClient
 
 from mongomock_motor import AsyncMongoMockClient
-from config.config import initiate_database
 
 import models as models
 from app import app, token_listener
