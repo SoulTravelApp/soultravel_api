@@ -8,3 +8,4 @@ pymongo
 starlette
 typing-extensions
 uvicorn
+mangum
