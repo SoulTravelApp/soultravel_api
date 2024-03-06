@@ -6,5 +6,8 @@ app = FastAPI()
 
 app.include_router(user_score_api_router)
 
+@app.get("/")
+async def health():
+    return {"message": "Hello Soultravel API is working"}
 
 handler = Mangum(app)
