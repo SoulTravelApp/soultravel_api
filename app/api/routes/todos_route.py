@@ -1,9 +1,9 @@
 from fastapi import APIRouter
 
-from models.todos_model import Todo
-from config.database import collection_name
+from api.models.todos_model import Todo
+from api.config.database import collection_name
 
-from schemas.todos_schema import todos_serializer, todo_serializer
+from api.schemas.todos_schema import todos_serializer, todo_serializer
 from bson import ObjectId
 
 todo_api_router = APIRouter()
