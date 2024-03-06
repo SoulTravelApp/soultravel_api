@@ -4,3 +4,4 @@ mangum
 pydantic
 botocore
 boto3
+dotenv
