@@ -7,3 +7,4 @@ db = client.soultraveldev
 
 user_score_collection = db["user_score"]
 benefit_collection = db["benefit"]
+user_benefit_collection = db["user_benefit"]

@@ -6,7 +6,7 @@ from app.config.database import benefit_collection
 from app.schemas.benefit_schema import benefits_serializer
 from bson import ObjectId
 
-benefit_api_router = APIRouter(prefix='/benefit', tags=["benefit"])
+benefit_api_router = APIRouter(prefix='/benefit', tags=["Benefit"])
 
 # retrieve
 @benefit_api_router.get("/")
