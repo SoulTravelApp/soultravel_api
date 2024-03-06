@@ -3,6 +3,6 @@ from pymongo import MongoClient
 client = MongoClient("mongodb+srv://soultravelapp:mzryxB5jPmJ49TsS@soultravel-dev.oupucs5.mongodb.net/?retryWrites=true&w=majority&appName=soultravel-dev")
 
 
-db = client.todo_app
+db = client.soultraveldev
 
-collection_name = db["todos_app"]
+user_score_collection = db["user_score"]
