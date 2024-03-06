@@ -1,18 +1,16 @@
+import uvicorn
 from fastapi import FastAPI
+from database.db import create_tables
+from routes.song import routes_song
+from pathlib import Path
 from mangum import Mangum
 
-from api.v1.api import router as api_router
+app = FastAPI()
+handler = Mangum(app)
 
-app = FastAPI(title='Serverless Lambda FastAPI')
+app.include_router(routes_song, prefix="/song")
 
-app.include_router(api_router, prefix="/api/v1")
+create_tables()
 
-
-@app.get("/",  tags=["Endpoint Test"])
-def main_endpoint_test():
-    return {"message": "Welcome CI/CD Pipeline with GitHub Actions!"}
-
-
-# to make it work with Amazon Lambda, we create a handler object
-handler = Mangum(app=app)
-
+if __name__ == "__main__":
+    uvicorn.run(f"{Path(__file__).stem}:app", host="0.0.0.0", port=8000, debug=True, env_file=".env")
