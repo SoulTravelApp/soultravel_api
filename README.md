@@ -1,6 +1,6 @@
 # SoulTravel API
 
-Bem-vindo ao SoulTravel API, um projeto incrível baseado no framework FastAPI em Python. Este projeto permite [descrição breve do que o projeto faz].
+Bem-vindo ao SoulTravel API, um projeto incrível baseado no framework FastAPI em Python.
 
 ## Pré-requisitos
 
@@ -14,7 +14,7 @@ Certifique-se de ter os seguintes requisitos instalados em sua máquina antes de
 1. Clone este repositório em sua máquina local:
 
    ```bash
-   git clone https://github.com/seu-usuario/soultravel_api.git
+   git clone https://github.com/SoulTravelApp/soultravel_api.git
    ```
 
 2. Navegue até o diretório do projeto:
@@ -44,9 +44,3 @@ Certifique-se de incluir a opção `--reload` para que o servidor seja reiniciad
 ## Documentação da API
 
 Acesse a documentação interativa da API em [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) para explorar os endpoints disponíveis e testar as requisições.
-
-## Contribuição
-
-Se você quiser contribuir para este projeto, por favor, siga os padrões de contribuição definidos no [CONTRIBUTING.md](CONTRIBUTING.md) do repositório.
-
-Divirta-se explorando o SoulTravel API!
