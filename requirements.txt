@@ -34,3 +34,4 @@ tomli==2.0.1
 asgi-lifespan
 typing_extensions
 uvicorn
+pydantic-settings
