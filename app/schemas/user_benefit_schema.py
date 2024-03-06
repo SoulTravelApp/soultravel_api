@@ -10,5 +10,6 @@ def user_benefit_serializer(benefit) -> dict:
         "usr_adm": benefit["usr_adm"],
     }
 
+
 def user_benefits_serializer(user_benefits) -> list:
     return [user_benefit_serializer(user_benefit) for user_benefit in user_benefits]

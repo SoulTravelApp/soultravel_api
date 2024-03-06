@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
 
+
 class Benefit(BaseModel):
     title: str
     subtitle: str

@@ -7,5 +7,6 @@ def user_score_serializer(user_score) -> dict:
         "created_at": user_score["created_at"],
     }
 
+
 def user_scores_serializer(user_scores) -> list:
     return [user_score_serializer(user_score) for user_score in user_scores]

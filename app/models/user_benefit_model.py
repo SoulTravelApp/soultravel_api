@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
 
+
 class UserBenefit(BaseModel):
     user_id: str
     benefit_id: str

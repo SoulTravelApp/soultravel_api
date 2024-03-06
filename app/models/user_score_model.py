@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 from datetime import datetime
 
+
 class UserScore(BaseModel):
     user_id: str
     forum_contribuitions: int

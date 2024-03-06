@@ -10,8 +10,10 @@ app.include_router(user_score_api_router)
 app.include_router(benefit_api_router)
 app.include_router(user_benefit_api_router)
 
+
 @app.get("/")
 async def health():
     return {"message": "Hello Soultravel API is working"}
+
 
 handler = Mangum(app)
